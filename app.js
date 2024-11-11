@@ -42,9 +42,3 @@ function displayUsers(users) {
 function toggleButtons(page) {
   document.getElementById("prev").disabled = page === 1;
 }
-fetch('https://randomuser.me/api/?page=1&results=5')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data); // Check if the API data is fetched correctly
-  })
-  .catch(error => console.log('Error:', error));
